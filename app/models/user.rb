@@ -5,7 +5,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :products, dependent: :destroy
-  
-         
+ 
+  def has_role?(role)
+    roles.include?(role)
+  end 
 
 end

@@ -5,9 +5,9 @@ class Ability
 
   def initialize(user)
     
-    if user.has_role? :admin
+    if user.admin?
       can :manage, :all
-    elsif user.has_role? :teamlead
+    elsif user.teamlead
       can :create,Employee           
       can :read,:all
       can :destroy,Employee
@@ -29,7 +29,7 @@ class Ability
     #   else
     #     can :read, :all
     #   end
-    #
+    # #
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions

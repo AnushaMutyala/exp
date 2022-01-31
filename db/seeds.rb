@@ -11,24 +11,24 @@ Role.create(name: :employee)
 user1 = User.create(
 								    email: 'anusha242316@gmail.com',
 								    password: '1234567',
-								    password_confirmation: 'password1234')
+								    password_confirmation: '1234567')
 user1.add_role(:admin)
 
 user2 = User.create(
 								    email: 'anusha@gmail.com',
 								    password: '1234567',
-								    password_confirmation: 'password1234')
+								    password_confirmation: '1234567')
 user2.add_role(:employee)
 user3 = User.create(
 								    email: 'chinni@gmail.com',
 								    password: '1234567',
-								    password_confirmation: 'password1234')
+								    password_confirmation: '1234567')
 user3.add_role(:teamlead)
 
 user4 = User.create(
 								    email: 'anu@gmail.com',
 								    password: '1234567',
-								    password_confirmation: 'password1234')
+								    password_confirmation: '1234567')
 user4.add_role(:teamlead)
 user4.add_role(:employee)
 
